@@ -51,10 +51,41 @@ register_sidebar( array(
 	'after_title'   => '</h2>'
 ) );
 
+// nav
+
 register_sidebar( array(
 	'id'    => 'nav-sidebar',
 	'name'  => 'nav-sidebar',
-	'before_widget' => '<section id="%1$s" class="widget %2$s">',
+	'before_widget' => '<aside class="widget menu-widget">',
+	'after_widget'  => '</aside>',
+	'before_title'  => '<h2 class="h5 widget-title">',
+	'after_title'   => '</h2>'
+) );
+
+// footer 
+
+register_sidebar( array(
+	'id'    => 'bottom-sidebar-1',
+	'name'  => 'bottom sidebar 1#',
+	'before_widget' => '<section  id="%1$s" class="footer-widget widget %2$s">',
+	'after_widget'  => '</section>',
+	'before_title'  => '<h2 class="h5 widget-title">',
+	'after_title'   => '</h2>'
+) );
+
+register_sidebar( array(
+	'id'    => 'bottom-sidebar-2',
+	'name'  => 'bottom sidebar 2#',
+	'before_widget' => '<section id="%1$s" class="footer-widget widget %2$s">',
+	'after_widget'  => '</section>',
+	'before_title'  => '<h2 class="h5 widget-title">',
+	'after_title'   => '</h2>'
+) );
+
+register_sidebar( array(
+	'id'    => 'bottom-sidebar-3',
+	'name'  => 'bottom sidebar 3',
+	'before_widget' => '<section id="%1$s" class="footer-widget widget %2$s">',
 	'after_widget'  => '</section>',
 	'before_title'  => '<h2 class="h5 widget-title">',
 	'after_title'   => '</h2>'
